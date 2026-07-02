@@ -122,7 +122,7 @@ sudo emerge --ask net-libs/libpcap sys-libs/ncurses
 The project builds with the included `Makefile` — no CMake or other build system needed. Object files are written to `build/`, with automatic dependency tracking so incremental rebuilds only recompile what changed.
 
 ```bash
-git clone <this-repository-url>
+git clone https://github.com/miasmaer/NULL
 cd null
 make            # builds ./null
 ```
