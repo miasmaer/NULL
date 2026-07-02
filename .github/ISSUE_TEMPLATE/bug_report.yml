@@ -1,6 +1,6 @@
-name: 🐛 Bug Report
+name:  Bug Report
 description: Something crashed, misbehaved, or didn't build correctly.
-title: "[Bug]: "
+title: "Required Description "
 labels: ["bug"]
 body:
   - type: checkboxes
@@ -8,11 +8,11 @@ body:
     attributes:
       label: Acknowledgement of checking existent issues
       options:
-        - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
+        - label: I have checked that my issue is not already reported or not similar to other reports
           required: true
-        - label: I have attached full command output, logs, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
+        - label: I attached all required logs/outputs
           required: true
-        - label: I agree that I just mindlessly checked every box without actually reading anything.
+        - label: I aggre that i am just clicking random buttons just to be in "Issue".
           required: false
 
   - type: textarea
