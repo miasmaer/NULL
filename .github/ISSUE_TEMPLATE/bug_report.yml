@@ -1,7 +1,7 @@
 name:  Bug Report
 description: Something crashed, misbehaved, or didn't build correctly.
 title: "Required Description "
-labels: ["bug"]
+labels: BUG:
 body:
   - type: checkboxes
     id: acknowledgements
