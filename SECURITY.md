@@ -8,7 +8,7 @@ If you discover a security vulnerability in this network sniffer, **please do no
 
 Instead, please report it privately through GitHub's built-in system:
 1. Navigate to the **Issues** tab of this repository.
-2. Under "Reporting", click **Report a vulnerability**.
+2. Under "Reporting", click **Report a Security vulnerability**.
 3. Fill out the private form.
 
 As a solo developer, I will review the report in my private advisory workspace and pull request a fix as soon as possible.
