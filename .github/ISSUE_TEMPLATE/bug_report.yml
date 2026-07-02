@@ -1,0 +1,25 @@
+name: Bug Report
+description: Create a bug report to help us improve.
+labels: ["bug"]
+body:
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      title: Acknowledgement of checking existent issues
+      options:
+        - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
+          required: true
+        - label: I have attached full logs, screenshots, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
+          required: true
+        - label: I agree that I just mindlessly checked every box without actually reading anything.
+          required: false
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      title: What problem did you encounter?
+      description: |
+        Provide a comprehensive description of the problem you're facing. Don't forget to attach any additional resources you may have, such as log files and screenshots. **YOUR ISSUE WILL BE CLOSED IF YOU DO NOT PROVIDE LOGS.** Latest log can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/latest.log`.
+      placeholder: Leave a comment
+    validations:
+      required: true
