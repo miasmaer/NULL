@@ -1,25 +1,47 @@
-name: Bug Report
-description: Create a bug report to help us improve.
+name: 🐛 Bug Report
+description: Something crashed, misbehaved, or didn't build correctly.
+title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: checkboxes
     id: acknowledgements
     attributes:
-      title: Acknowledgement of checking existent issues
+      label: Acknowledgement of checking existent issues
       options:
         - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
           required: true
-        - label: I have attached full logs, screenshots, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
+        - label: I have attached full command output, logs, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
           required: true
         - label: I agree that I just mindlessly checked every box without actually reading anything.
           required: false
 
   - type: textarea
-    id: problem-description
+    id: problem
     attributes:
-      title: What problem did you encounter?
+      label: What problem did you encounter?
       description: |
-        Provide a comprehensive description of the problem you're facing. Don't forget to attach any additional resources you may have, such as log files and screenshots. **YOUR ISSUE WILL BE CLOSED IF YOU DO NOT PROVIDE LOGS.** Latest log can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/latest.log`.
-      placeholder: Leave a comment
+        Provide a comprehensive description of the problem you're facing, including the exact command you ran, your distro/compiler version, and what you expected to happen instead. Don't forget to attach any additional resources you may have, such as terminal output, screenshots, or a CSV export. **YOUR ISSUE WILL BE CLOSED IF YOU DO NOT PROVIDE OUTPUT/LOGS.** If you captured with `--sf`, attach the generated `NULL_capture_*.csv` file; for build failures, paste the full `make` output.
+      placeholder: |
+        Command: sudo ./null -i eth0 --https -v
+        Distro: Ubuntu 24.04
+        Compiler: g++ 13.2.0
+
+        Expected: ...
+        Actual: ...
     validations:
       required: true
+
+  - type: dropdown
+    id: interface-type
+    attributes:
+      label: Interface type (if capture/parsing related)
+      options:
+        - Not applicable
+        - Wired Ethernet
+        - Wi-Fi (managed mode)
+        - Wi-Fi (monitor mode)
+        - VPN / tunnel interface
+        - Container / bridge interface
+        - Other (describe above)
+    validations:
+      required: false
