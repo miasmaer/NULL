@@ -13,7 +13,7 @@ static constexpr const char* VERSION_STR = R"(
    ┼#┼ ┼:┼ ┼#┼ ┼#┼    ┼:┼ ┼#┼        ┼#┼     
   ┼#┼  ┼#┼#┼# ┼#┼    ┼#┼ ┼#┼        ┼#┼      
  #┼#   #┼#┼# #┼#    #┼# #┼#        #┼#       
-###    ####  ########  ########## ########## 
+###    ####  ########  ########## ########## >> V1.0.0
 
 
 )";
@@ -47,15 +47,6 @@ Utility:
   --list-interfaces  List capture interfaces and exit
   -h, --help         Show this help and exit
   --version          Print version and exit
-
-Examples:
-  sudo null -i eth0 --dns
-  sudo null -i wlan0 --https -v
-  sudo null -p 8080 --http
-  sudo null --host 8.8.8.8
-  sudo null --filter "tcp port 22" -c 100
-  sudo null --sf 500
-  sudo null --sf
 )";
 
 void print_help(const char*)
