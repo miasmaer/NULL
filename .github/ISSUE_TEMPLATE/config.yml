@@ -1,1 +1,6 @@
 blank_issues_enabled: false
+
+contact_links:
+  - name: Report a Security Vulnerability
+    url: https://github.com/miasmaer/NULL/security/advisories/new
+    about: If you found a vulnerability or exploit in this sniffer, please report it privately here.
