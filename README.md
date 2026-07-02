@@ -245,17 +245,18 @@ Keybindings:
 
 ## Bug reports
 
-Found a crash, a parsing bug, a build failure on your distro, or something that just looks wrong in the TUI? Please open a **GitHub Issue** on this repository. For further info head to SECURITY.md
+Found a crash, a parsing bug, a build failure on your distro, or something that just looks wrong in the TUI? Please open a **GitHub Issue** on this repository.
 
 When filing an issue, it helps a lot to include:
 
-- Your distro and version. If windows: version of windows.
+- Your distro and version.
 - Compiler and version.
 - The exact command you ran.
 - What you expected vs. what happened (including any error output).
 - If it's a capture/parsing bug, the interface type involved (Ethernet, Wi-Fi, VPN, container bridge, etc.) if relevant.
 
 Feature requests and pull requests are welcome through the same Issues tab.
+**NOTE** IF YOU FOUND SECURITY ISSUE PLEASE HEAD TO SECURITY.md FOR FURTHER HELP
 
 ## License
 
