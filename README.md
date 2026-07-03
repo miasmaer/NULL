@@ -28,7 +28,7 @@ A lightweight, root-only command-line packet sniffer for Linux. *NULL* captures 
 
 ## General information
 
-*NULL* is a small, dependency-light packet sniffer built directly on `libpcap` and `ncurses`, with no other third-party libraries involved. It aims to be a fast, readable alternative to reaching for `tcpdump`/`wireshark` when you just want to eyeball what's crossing an interface.
+*NULL* is a small, dependency-light packet sniffer built directly on `libpcap` and `ncurses`, with no other third-party libraries involved. It aims to be a fast and readable.
 
 **Core capabilities:**
 
