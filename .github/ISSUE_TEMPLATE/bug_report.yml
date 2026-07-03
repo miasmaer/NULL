@@ -1,6 +1,6 @@
 name:  Bug Report
 description: Something crashed, misbehaved, or didn't build correctly.
-title: "Required Description "
+title: ""
 labels: BUG
 body:
   - type: checkboxes
